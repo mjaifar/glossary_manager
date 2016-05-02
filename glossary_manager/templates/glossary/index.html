@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<ul>
+    {% for ac in acronyms %}
+    <li>
+        <a href="{% url 'acronym_detail' ac.id %}">
+            {{ac.abbreviation|upper}}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock content %}

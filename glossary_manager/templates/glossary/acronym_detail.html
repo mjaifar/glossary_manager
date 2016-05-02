@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+    <a href="{% url 'index' %}">Home</a>
+    <h3>{{ acronym.abbreviation|capfirst}}</h3>
+    <h2>Meaning: {{ acronym.word }}</h2>
+{% endblock content %}
